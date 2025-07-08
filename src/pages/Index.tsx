@@ -30,8 +30,7 @@ const Index = () => {
           
           {/* Subheadline */}
           <h2 className="text-xl md:text-2xl text-gray-700 font-semibold mb-8 leading-relaxed">
-            O método que transformou vendedores comuns em máquinas de conversão, 
-            <span className="text-brand-orange font-bold">por Herickson Maia</span>
+            O método que irá transformar vendedores comuns em máquinas de conversão
           </h2>
 
           {/* CTA Principal */}
