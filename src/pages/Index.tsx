@@ -30,8 +30,8 @@ const Index = () => {
           
           {/* Subheadline */}
           <h2 className="text-xl md:text-2xl text-gray-700 font-semibold mb-8 leading-relaxed">
-            O método que transformou vendedores comuns em 
-            <span className="text-brand-orange font-bold"> máquinas de conversão</span>
+            O método que transformou vendedores comuns em máquinas de conversão, 
+            <span className="text-brand-orange font-bold">por Herickson Maia</span>
           </h2>
 
           {/* CTA Principal */}
@@ -115,31 +115,35 @@ const Index = () => {
             <div className="bg-brand-gray p-8 rounded-xl">
               <div className="mb-6">
                 <div className="w-24 h-24 bg-brand-orange rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white text-2xl font-bold">RS</span>
+                  <span className="text-white text-2xl font-bold">HM</span>
                 </div>
-                <h3 className="text-2xl font-bold text-brand-dark">Rafael Silva</h3>
-                <p className="text-gray-600 font-semibold">Especialista em Vendas Consultivas</p>
+                <h3 className="text-2xl font-bold text-brand-dark">Herickson Maia</h3>
+                <p className="text-gray-600 font-semibold">Estrategista em Tráfego Pago</p>
               </div>
               
-              <div className="grid md:grid-cols-3 gap-6 text-center">
+              <div className="grid md:grid-cols-2 gap-6 text-center mb-6">
                 <div className="bg-white p-4 rounded-lg">
-                  <div className="text-2xl font-bold text-brand-orange mb-2">R$ 2.8M</div>
-                  <p className="text-sm text-gray-600 font-semibold">em vendas nos últimos 2 anos</p>
+                  <div className="text-2xl font-bold text-brand-orange mb-2">+5 anos</div>
+                  <p className="text-sm text-gray-600 font-semibold">de experiência no mercado digital</p>
                 </div>
                 <div className="bg-white p-4 rounded-lg">
-                  <div className="text-2xl font-bold text-brand-orange mb-2">12 anos</div>
-                  <p className="text-sm text-gray-600 font-semibold">de experiência em vendas B2B</p>
-                </div>
-                <div className="bg-white p-4 rounded-lg">
-                  <div className="text-2xl font-bold text-brand-orange mb-2">São Paulo</div>
-                  <p className="text-sm text-gray-600 font-semibold">Consultor empresarial</p>
+                  <div className="text-2xl font-bold text-brand-orange mb-2">R$ 10M+</div>
+                  <p className="text-sm text-gray-600 font-semibold">Faturados</p>
                 </div>
               </div>
               
-              <p className="text-gray-700 text-center mt-6 font-medium">
-                "Após anos perdendo vendas por não saber como convencer rapidamente, 
-                desenvolvi um método que me permitiu <span className="text-brand-orange font-bold">triplicar minha receita</span> 
-                e agora ensino esse mesmo sistema para vendedores em todo o Brasil."
+              <div className="bg-white p-4 rounded-lg text-center mb-6">
+                <div className="text-2xl font-bold text-brand-orange mb-2">R$ 2M+</div>
+                <p className="text-sm text-gray-600 font-semibold">gerenciados em anúncios</p>
+              </div>
+              
+              <p className="text-gray-700 text-center font-medium">
+                "Com mais de 5 anos de experiência em marketing digital, especializo-me em estratégias de tráfego pago, 
+                ajudando negócios a transformarem investimento em anúncios em resultados reais. Percebi que muitos empreendedores 
+                conseguem atrair leads qualificados, mas perdem vendas por não saberem como se conectar e se posicionar adequadamente 
+                nos primeiros segundos da conversa. Por isso, criei o e-book 'Como Convencer um Cliente em 60 Segundos' - 
+                um guia prático que combina minha experiência em marketing digital com técnicas comprovadas de comunicação e persuasão, 
+                <span className="text-brand-orange font-bold">focando especificamente no momento mais crítico de qualquer venda: os primeiros 60 segundos de contato.</span>"
               </p>
             </div>
           </div>
@@ -156,44 +160,13 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-6">
             <div className="bg-white p-6 rounded-xl">
               <div className="flex items-start gap-4">
-                <Zap className="w-8 h-8 text-brand-orange flex-shrink-0 mt-1" />
+                <Clock className="w-8 h-8 text-brand-orange flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold text-brand-dark mb-2">
-                    Técnicas de Fechamento Relâmpago
+                    O Poder dos Primeiros 60 Segundos
                   </h3>
                   <p className="text-gray-600">
-                    Aprenda 7 técnicas comprovadas para fechar vendas em menos de 60 segundos, 
-                    mesmo com clientes resistentes.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl">
-              <div className="flex items-start gap-4">
-                <Brain className="w-8 h-8 text-brand-orange flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-xl font-bold text-brand-dark mb-2">
-                    Gatilhos Mentais de Conversão
-                  </h3>
-                  <p className="text-gray-600">
-                    Domine os 12 gatilhos psicológicos que fazem o cliente decidir na hora, 
-                    sem pressão ou insistência.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl">
-              <div className="flex items-start gap-4">
-                <BookOpen className="w-8 h-8 text-brand-orange flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-xl font-bold text-brand-dark mb-2">
-                    Scripts Prontos para Usar
-                  </h3>
-                  <p className="text-gray-600">
-                    Receba 15+ scripts testados e aprovados para diferentes situações de venda, 
-                    do primeiro contato ao fechamento.
+                    Descubra a importância crucial dos primeiros 60 segundos na interação presencial e como estabelecer uma base de confiança e credibilidade rapidamente. Aprenda a otimizar cada momento, desde a chegada do cliente até a construção de rapport, utilizando técnicas de linguagem corporal, contato visual e sorriso genuíno para causar uma primeira impressão impactante.
                   </p>
                 </div>
               </div>
@@ -204,26 +177,10 @@ const Index = () => {
                 <Target className="w-8 h-8 text-brand-orange flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold text-brand-dark mb-2">
-                    Identificação de Objeções
+                    O Funil de Vendas
                   </h3>
                   <p className="text-gray-600">
-                    Descubra como identificar e neutralizar as 10 objeções mais comuns 
-                    antes mesmo delas aparecerem.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl">
-              <div className="flex items-start gap-4">
-                <Clock className="w-8 h-8 text-brand-orange flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="text-xl font-bold text-brand-dark mb-2">
-                    Método da Urgência Genuína
-                  </h3>
-                  <p className="text-gray-600">
-                    Aprenda a criar urgência real (não fake) que faz o cliente agir agora, 
-                    sem soar desesperado.
+                    Entenda como aplicar os princípios do funil de vendas especificamente para interações presenciais, guiando o cliente de forma eficaz desde o primeiro contato até a decisão de compra. Esteja preparado para transformar cada etapa em uma oportunidade de avanço no processo de vendas.
                   </p>
                 </div>
               </div>
@@ -234,11 +191,24 @@ const Index = () => {
                 <DollarSign className="w-8 h-8 text-brand-orange flex-shrink-0 mt-1" />
                 <div>
                   <h3 className="text-xl font-bold text-brand-dark mb-2">
-                    Estratégias de Preço e Valor
+                    Valor em Vendas Presenciais
                   </h3>
                   <p className="text-gray-600">
-                    Domine a arte de apresentar preços de forma que o cliente veja valor, 
-                    não custo.
+                    Aprenda a comunicar o valor do seu produto ou serviço de forma clara e concisa, garantindo que o cliente perceba os benefícios e a relevância da sua oferta em um curto espaço de tempo. Domine a arte de apresentar preços de forma que o cliente veja valor, não custo.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white p-6 rounded-xl">
+              <div className="flex items-start gap-4">
+                <Zap className="w-8 h-8 text-brand-orange flex-shrink-0 mt-1" />
+                <div>
+                  <h3 className="text-xl font-bold text-brand-dark mb-2">
+                    Estratégias de Comunicação Rápida
+                  </h3>
+                  <p className="text-gray-600">
+                    Desenvolva habilidades de comunicação que permitam transmitir sua mensagem de forma impactante e persuasiva em poucos segundos. Descubra técnicas para engajar o cliente, identificar suas necessidades e apresentar soluções de maneira eficiente, mesmo com clientes resistentes.
                   </p>
                 </div>
               </div>
