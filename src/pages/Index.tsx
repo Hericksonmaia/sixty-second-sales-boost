@@ -319,7 +319,7 @@ const Index = () => {
             </ul>
           </div>
           
-          <CTAButton onClick={handleCTAClick} size="large" className="w-full md:w-auto bg-white text-brand-orange hover:bg-gray-100" />
+          <CTAButton onClick={handleCTAClick} size="large" className="w-full md:w-auto" />
           
           <p className="mt-6 text-sm opacity-90">
             * Oferta válida apenas por 24 horas. Após esse período, o e-book volta ao preço normal de R$ 97.
