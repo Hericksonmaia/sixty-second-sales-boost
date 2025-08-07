@@ -10,11 +10,7 @@ const Index = () => {
   const countdownTarget = new Date(Date.now() + 24 * 60 * 60 * 1000);
 
   const handleCTAClick = () => {
-    // Scroll suave para a seção de oferta ou redirecionar para checkout
-    const offerSection = document.getElementById('oferta');
-    if (offerSection) {
-      offerSection.scrollIntoView({ behavior: 'smooth' });
-    }
+    window.open('https://pay.kiwify.com.br/bruxjPG', '_blank');
   };
 
   return (
