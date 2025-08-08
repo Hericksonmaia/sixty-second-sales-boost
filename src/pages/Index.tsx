@@ -1,20 +1,15 @@
-
 import React from 'react';
 import { CheckCircle, X, Star, Clock, Users, TrendingUp, Zap, Target, Brain, BookOpen, DollarSign } from 'lucide-react';
 import CountdownTimer from '../components/CountdownTimer';
 import CTAButton from '../components/CTAButton';
 import GuaranteeSeal from '../components/GuaranteeSeal';
-
 const Index = () => {
   // Countdown para 24 horas a partir de agora
   const countdownTarget = new Date(Date.now() + 24 * 60 * 60 * 1000);
-
   const handleCTAClick = () => {
     window.open('https://pay.kiwify.com.br/bruxjPG', '_blank');
   };
-
-  return (
-    <div className="min-h-screen bg-white font-inter overflow-x-hidden">
+  return <div className="min-h-screen bg-white font-inter overflow-x-hidden">
       {/* Header/Hero Section */}
       <section className="bg-gradient-to-b from-brand-gray to-white py-12 px-4">
         <div className="max-w-4xl mx-auto text-center">
@@ -35,20 +30,7 @@ const Index = () => {
           </div>
 
           {/* Prova Social Rápida */}
-          <div className="flex justify-center items-center gap-6 text-sm text-gray-600 flex-wrap">
-            <div className="flex items-center gap-2">
-              <Users className="w-4 h-4 text-brand-orange" />
-              <span className="font-semibold">+15.847 vendedores</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <Star className="w-4 h-4 text-yellow-500" />
-              <span className="font-semibold">4.9/5 estrelas</span>
-            </div>
-            <div className="flex items-center gap-2">
-              <TrendingUp className="w-4 h-4 text-green-500" />
-              <span className="font-semibold">94% de aprovação</span>
-            </div>
-          </div>
+          
         </div>
       </section>
 
@@ -222,9 +204,7 @@ const Index = () => {
           <div className="bg-white p-8 rounded-xl shadow-lg">
             <div className="flex justify-center mb-4">
               <div className="flex gap-1">
-                {[1,2,3,4,5].map((star) => (
-                  <Star key={star} className="w-6 h-6 text-yellow-500 fill-current" />
-                ))}
+                {[1, 2, 3, 4, 5].map(star => <Star key={star} className="w-6 h-6 text-yellow-500 fill-current" />)}
               </div>
             </div>
             
@@ -340,8 +320,6 @@ const Index = () => {
       <div className="fixed bottom-0 left-0 right-0 bg-brand-orange p-4 z-50 md:hidden">
         <CTAButton onClick={handleCTAClick} className="w-full text-sm py-3" />
       </div>
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
