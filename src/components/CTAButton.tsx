@@ -13,7 +13,7 @@ const CTAButton: React.FC<CTAButtonProps> = ({
   className = '', 
   size = 'default' 
 }) => {
-  const baseClasses = "bg-gradient-to-r from-brand-orange to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-glow hover:shadow-xl flex items-center justify-center gap-3 animate-pulse-strong border-2 border-orange-400";
+  const baseClasses = "bg-brand-orange hover:bg-orange-600 text-white font-bold rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center gap-3 animate-pulse-strong";
   
   const sizeClasses = size === 'large' 
     ? "px-8 py-6 text-xl" 

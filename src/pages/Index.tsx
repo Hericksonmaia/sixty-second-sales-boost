@@ -4,10 +4,6 @@ import { CheckCircle, X, Star, Clock, Users, TrendingUp, Zap, Target, Brain, Boo
 import CountdownTimer from '../components/CountdownTimer';
 import CTAButton from '../components/CTAButton';
 import GuaranteeSeal from '../components/GuaranteeSeal';
-import TrustSignals from '../components/TrustSignals';
-import TestimonialCard from '../components/TestimonialCard';
-import SocialProofBar from '../components/SocialProofBar';
-import AuthorProfile from '../components/AuthorProfile';
 
 const Index = () => {
   // Countdown para 24 horas a partir de agora
@@ -38,9 +34,20 @@ const Index = () => {
             <CTAButton onClick={handleCTAClick} size="large" className="w-full md:w-auto" />
           </div>
 
-          {/* Prova Social Moderna */}
-          <div className="max-w-2xl mx-auto">
-            <SocialProofBar />
+          {/* Prova Social Rápida */}
+          <div className="flex justify-center items-center gap-6 text-sm text-gray-600 flex-wrap">
+            <div className="flex items-center gap-2">
+              <Users className="w-4 h-4 text-brand-orange" />
+              <span className="font-semibold">+15.847 vendedores</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <Star className="w-4 h-4 text-yellow-500" />
+              <span className="font-semibold">4.9/5 estrelas</span>
+            </div>
+            <div className="flex items-center gap-2">
+              <TrendingUp className="w-4 h-4 text-green-500" />
+              <span className="font-semibold">94% de aprovação</span>
+            </div>
           </div>
         </div>
       </section>
@@ -96,11 +103,44 @@ const Index = () => {
       <section className="py-16 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-12">
-              Conheça o <span className="text-brand-orange">Especialista</span> por trás do método
+            <h2 className="text-3xl md:text-4xl font-bold text-brand-dark mb-6">
+              Quem é o <span className="text-brand-orange">Especialista</span> por trás do método?
             </h2>
             
-            <AuthorProfile />
+            <div className="bg-brand-gray p-8 rounded-xl">
+              <div className="mb-6">
+                <div className="w-24 h-24 bg-brand-orange rounded-full mx-auto mb-4 flex items-center justify-center">
+                  <span className="text-white text-2xl font-bold">HM</span>
+                </div>
+                <h3 className="text-2xl font-bold text-brand-dark">Herickson Maia</h3>
+                <p className="text-gray-600 font-semibold">Estrategista em Tráfego Pago</p>
+              </div>
+              
+              <div className="grid md:grid-cols-2 gap-6 text-center mb-6">
+                <div className="bg-white p-4 rounded-lg">
+                  <div className="text-2xl font-bold text-brand-orange mb-2">+5 anos</div>
+                  <p className="text-sm text-gray-600 font-semibold">de experiência no mercado digital</p>
+                </div>
+                <div className="bg-white p-4 rounded-lg">
+                  <div className="text-2xl font-bold text-brand-orange mb-2">R$ 10M+</div>
+                  <p className="text-sm text-gray-600 font-semibold">Faturados</p>
+                </div>
+              </div>
+              
+              <div className="bg-white p-4 rounded-lg text-center mb-6">
+                <div className="text-2xl font-bold text-brand-orange mb-2">R$ 2M+</div>
+                <p className="text-sm text-gray-600 font-semibold">gerenciados em anúncios</p>
+              </div>
+              
+              <p className="text-gray-700 text-center font-medium">
+                "Com mais de 5 anos de experiência em marketing digital, especializo-me em estratégias de tráfego pago, 
+                ajudando negócios a transformarem investimento em anúncios em resultados reais. Percebi que muitos empreendedores 
+                conseguem atrair leads qualificados, mas perdem vendas por não saberem como se conectar e se posicionar adequadamente 
+                nos primeiros segundos da conversa. Por isso, criei o e-book 'Como Convencer um Cliente em 60 Segundos' - 
+                um guia prático que combina minha experiência em marketing digital com técnicas comprovadas de comunicação e persuasão, 
+                <span className="text-brand-orange font-bold">focando especificamente no momento mais crítico de qualquer venda: os primeiros 60 segundos de contato.</span>"
+              </p>
+            </div>
           </div>
         </div>
       </section>
@@ -172,37 +212,33 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Depoimentos */}
+      {/* Depoimento */}
       <section className="py-16 px-4 bg-yellow-50">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-brand-dark mb-12">
             Veja o que nossos <span className="text-brand-orange">leitores</span> estão dizendo
           </h2>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <TestimonialCard
-              name="Mariana S."
-              role="Consultora de Marketing Digital"
-              content="Eu estava há meses sem fechar uma venda decente. Depois de aplicar apenas 3 técnicas do e-book, consegui fechar R$ 15.000 em contratos em uma única semana. O método do Herickson realmente funciona!"
-              rating={5}
-              highlight="R$ 15.000 em contratos"
-            />
+          <div className="bg-white p-8 rounded-xl shadow-lg">
+            <div className="flex justify-center mb-4">
+              <div className="flex gap-1">
+                {[1,2,3,4,5].map((star) => (
+                  <Star key={star} className="w-6 h-6 text-yellow-500 fill-current" />
+                ))}
+              </div>
+            </div>
             
-            <TestimonialCard
-              name="Carlos R."
-              role="Vendedor Autônomo"
-              content="Incrível como pequenos ajustes nos primeiros 60 segundos podem mudar tudo. Minha taxa de conversão aumentou 280% em apenas 2 semanas aplicando as técnicas."
-              rating={5}
-              highlight="280% em apenas 2 semanas"
-            />
+            <blockquote className="text-xl text-gray-700 text-center mb-6 italic">
+              "Eu estava há meses sem fechar uma venda decente. Depois de aplicar apenas 3 técnicas 
+              do e-book, consegui fechar R$ 15.000 em contratos em uma única semana. 
+              O método do Rafael realmente funciona!"
+            </blockquote>
             
-            <TestimonialCard
-              name="Ana Paula M."
-              role="Gerente Comercial"
-              content="Comprei pensando que seria mais do mesmo, mas me surpreendi. As estratégias são práticas e funcionam até com clientes mais resistentes. Recomendo para toda a equipe."
-              rating={5}
-              highlight="funcionam até com clientes mais resistentes"
-            />
+            <div className="text-center">
+              <p className="font-bold text-brand-dark">Mariana S.</p>
+              <p className="text-gray-600">Consultora de Marketing Digital</p>
+              <p className="text-sm text-gray-500 mt-1">⭐⭐⭐⭐⭐ Verificado</p>
+            </div>
           </div>
         </div>
       </section>
@@ -232,7 +268,20 @@ const Index = () => {
             
             <CTAButton onClick={handleCTAClick} size="large" className="w-full mb-6" />
             
-            <TrustSignals />
+            <div className="flex justify-center items-center gap-4 text-sm text-gray-600 flex-wrap">
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-green-500" />
+                <span>Acesso Imediato</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-green-500" />
+                <span>Download Seguro</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <CheckCircle className="w-4 h-4 text-green-500" />
+                <span>Garantia 7 Dias</span>
+              </div>
+            </div>
           </div>
           
           <GuaranteeSeal />
