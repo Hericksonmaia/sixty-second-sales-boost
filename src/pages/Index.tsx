@@ -91,8 +91,12 @@ const Index = () => {
             
             <div className="bg-brand-gray p-8 rounded-xl">
               <div className="mb-6">
-                <div className="w-24 h-24 bg-brand-orange rounded-full mx-auto mb-4 flex items-center justify-center">
-                  <span className="text-white text-2xl font-bold">HM</span>
+                <div className="w-24 h-24 rounded-full mx-auto mb-4 overflow-hidden">
+                  <img 
+                    src="/lovable-uploads/79b4d759-f25e-4978-a980-82d5893a2472.png" 
+                    alt="Herickson Maia - Estrategista em Tráfego Pago" 
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <h3 className="text-2xl font-bold text-brand-dark">Herickson Maia</h3>
                 <p className="text-gray-600 font-semibold">Estrategista em Tráfego Pago</p>
