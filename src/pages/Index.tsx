@@ -26,7 +26,7 @@ const Index = () => {
 
           {/* CTA Principal */}
           <div className="mb-12">
-            <CTAButton onClick={handleCTAClick} size="large" className="w-full md:w-auto" />
+            <CTAButton onClick={handleCTAClick} size="large" className="w-full max-w-md mx-auto" />
           </div>
 
           {/* Prova Social Rápida */}
@@ -250,7 +250,7 @@ const Index = () => {
               <CountdownTimer targetDate={countdownTarget} />
             </div>
             
-            <CTAButton onClick={handleCTAClick} size="large" className="w-full mb-6" />
+            <CTAButton onClick={handleCTAClick} size="large" className="w-full max-w-md mx-auto mb-6" />
             
             <div className="flex justify-center items-center gap-4 text-sm text-gray-600 flex-wrap">
               <div className="flex items-center gap-2">
@@ -299,7 +299,7 @@ const Index = () => {
             </ul>
           </div>
           
-          <CTAButton onClick={handleCTAClick} size="large" className="w-full md:w-auto" />
+          <CTAButton onClick={handleCTAClick} size="large" className="w-full max-w-md mx-auto" />
           
           <p className="mt-6 text-sm opacity-90">
             * Oferta válida apenas por 24 horas. Após esse período, o e-book volta ao preço normal de R$ 97.
